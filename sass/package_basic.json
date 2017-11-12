@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "sass": "node-sass sass/ -o css/"
+    },
+    "keywords":[],
+    "author":"",
+    "license":"ISC"
+}

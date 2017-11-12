@@ -1,0 +1,64 @@
+$page-width       : 1200px;
+$column-count     : 12;
+$gutter-direction : 'split';
+$gutter-width     : 20px;
+$column-width     : 100px;
+$blue-color :#22d3ff; 
+$red-color :#f96b2d;
+$yellow-color:#fed739;
+$green-color:#475e50;
+
+$is-center-position:true;
+.container {
+    width:$page-width;
+    /* 또는 @if $is-center-position  */
+    @if $is-center-position == true {
+        margin-left: auto;
+        margin-right:auto;
+    }
+}
+@function de-unit($unit) {
+    @return $unit / ($unit * 0 + 1);
+}
+@function em($px) {
+    $px:de-unit($px);
+    @return ($px /16) * 1em;
+}
+.col {
+    $half-gutter-width:$gutter-width / 2;
+    float:left;
+    width:100%;
+    margin: {
+        left:$half-gutter-width;
+        right:$half-gutter-width;
+    }
+    &:hover {
+        margin-top:20px; 
+    }
+    @media screen and (min-width:em(800)) {
+        width:50%;  
+        /* width:precentage(421px/$page-width)  */
+    }
+}
+.straight-center {
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+}
+.button {
+    /* !optional : 옵션    */
+    @extend %straight-center !optional;
+    background-color: $blue-color;
+    font-weight:bold;
+    color:white;
+    padding: 5px;
+}
+.button-activated {
+    @extend .button;
+    padding: 10px;
+    background:rgba(#32b728, 0.8);
+}
+.button-checkout {
+    @extend .button;
+    background-color:darken($blue-color, 20%);
+}

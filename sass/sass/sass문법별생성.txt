@@ -1,0 +1,2 @@
+/*  코딩방법 옵션
+    nested(한줄로), expanded(여러줄로), compact(맨끝에 닫는 괄호와 마지막 속성이 함께), compressed(모든css엔터없이) *

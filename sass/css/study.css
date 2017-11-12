@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.container {
+  width: 1200px;
+  /* 또는 @if $is-center-position  */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  float: left;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col:hover {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 50em) {
+  .col {
+    width: 50%;
+    /* width:precentage(421px/$page-width)  */
+  }
+}
+
+.straight-center, .button, .button-activated, .button-checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button, .button-activated, .button-checkout {
+  background-color: #22d3ff;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+}
+
+.button-activated {
+  padding: 10px;
+  background: rgba(50, 183, 40, 0.8);
+}
+
+.button-checkout {
+  background-color: #0096bb;
+}
