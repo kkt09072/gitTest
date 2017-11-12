@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>1200 그리드 시스템 활용</title>
+  <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/toggleGrid.js"></script>
+</head>
+<body>
+
+  <!-- 그리드 시스템 모듈
+       .container 컨테이너 1200px
+        .row 행
+          .col.is-6 컬럼 .col.is-6 컬럼
+        .row 행
+          .col.is-4 컬럼 .col.is-4 컬럼 .col.is-4 컬럼
+  -->
+
+  <div class="container">
+    <div class="row">
+      <!-- 2 Columns -->
+      <div class="col is-6 imgFrm">
+          <img src="asset/infographic-valid.jpg" alt="문제점">
+      </div>
+      <div class="col is-6 imgFrm">
+          <img src="asset/infographic-invalid.jpg" alt="좋은점">
+      </div>
+    </div>
+    <div class="row">
+      <!-- 2 Columns -->
+      <div class="col is-6">
+          <h2 class="con_title hue1">Desktop First 방식을 사용할 경우 문제점</h2>
+      </div>
+      <div class="col is-6">
+          <h2 class="con_title hue2">Desktop First 방식을 사용할 경우 좋은점</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- 2 Columns -->
+      <div class="col is-6">
+          <p class="con_coment">SourceTree 구동 시 모달 윈도우가 화면에 띄워집니다. 보이지 않는다면, 메뉴 > "새로 만들기" 를 선택합니다.
+로컬/원격 탭을 클릭하면 내 컴퓨터 저장소/GitHub 원격 저장소 관리 항목을 볼 수 있습니다.
+원격 항목을 검색하면 필터되어 화면에 표시됩니다.</p>
+      </div>
+      <div class="col is-6">
+          <p class="con_coment">SourceTree 구동 시 모달 윈도우가 화면에 띄워집니다. 보이지 않는다면, 메뉴 > "새로 만들기" 를 선택합니다.
+로컬/원격 탭을 클릭하면 내 컴퓨터 저장소/GitHub 원격 저장소 관리 항목을 볼 수 있습니다.
+원격 항목을 검색하면 필터되어 화면에 표시됩니다.</p>
+      </div>
+    </div>
+    <div class="row tst">
+      <!-- 3 Columns -->
+      <div class="col is-4">column 1</div>
+      <div class="col is-2 is-o-2">column 2</div>
+      <div class="col is-4">column 3</div>
+    </div>
+    <div class="row tst">
+      <!-- 4 Columns -->
+      <div class="col is-3">column 1</div>
+      <div class="col is-3">column 2</div>
+      <div class="col is-3">column 3</div>
+      <div class="col is-3">column 4</div>
+    </div>
+  </div>
+  <div class="jul">
+      <div class="can"><p>column 1</p></div>
+      <div class="can"><p>column 2</p></div>
+      <div class="can"><p>column 3</p></div>
+      <div class="can"><p>column 4</p></div>
+  </div>
+  <div class="jul">
+      <div class="can"><p>column 1</p></div>
+      <div class="can"><p>column 2</p></div>
+      <div class="can"><p>column 3</p></div>
+  </div>
+  <script>
+    // 그리드 토글 함수 실행
+    // window.toggleGrid(container, className);
+    var container = '.container';
+    window.toggleGrid(container, 'show-grid');
+  </script>
+</body>
+</html>

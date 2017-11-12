@@ -1,0 +1,40 @@
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body { font-family: 'Spoqa Han Sans', Dotum, 'Sans-serif'; }
+:root {
+ --leading:21px;
+}
+p {     margin-top:var(--leading); }
+
+.body-default-font-size-setting {
+    font-size:16px;
+    line-height: 120%; 
+    letter-spacing: 0;
+    word-spacing:0;
+    color:#000000;
+}
+.design-custom-font-size-setting {
+    font-size:14px;
+    /* 브라우저 기본폰트크기 16px */
+    font-size:0.875rem; /* 모던 브라우저 */
+    line-height:1.5;  /* %, em, rem */
+    letter-spacing:-0.064em; /* 1/1000em */
+    letter-spacing:-1px; 
+    color:#222325;
+}
+.pageTitle2 {
+    text-align:center; 
+    font-size:50px;
+    font-size:1.414rem;
+    line-height:3; 
+}
+.show-leading {
+    --leadnig-gradient:calc(var(--leading) - 1px);
+    background:linear-gradient(180deg, transparent 20px, #491fa4 20px);
+    background-size:1px var(--leading); 
+}
+.nav-font-system a { 
+    text-decoration:none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#181918; 
+}

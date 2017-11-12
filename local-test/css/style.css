@@ -1,0 +1,16 @@
+body, html { overflow-x:hidden; background:#ffffff;
+min-height:100vh; }
+.page { width:100%; height:100%; position:relative;  }
+.pageWrap { width:1280px; margin:0 auto;  }
+.pageImg { display:block; width:100%; }
+.pageTitle { line-height:90px; 
+    text-align:center; }
+#hd { width:100%; height:120px;  position:relative; }
+.hdWrap { width:1280px; margin:0 auto; }
+.logo { display:block; float:left; }
+#hd nav li { float:left; padding:10px; }
+#hd nav li a { display:block; line-height:32px; padding:10px; }
+#tnb { float:right; }
+#gnb { clear:both; width:600px; margin:0 auto; }
+
+#contents { clear:both; }
